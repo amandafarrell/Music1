@@ -23,32 +23,46 @@
 
         <ImageView
             android:id="@+id/image2_invisible"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/black_note"
-            android:visibility="invisible" />
+            style="@style/NoteTheme"
+            android:src="@drawable/treblecleff"
+            />
 
         <ImageView
             android:id="@+id/image1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/NoteTheme"
             android:src="@drawable/green_note" />
 
         <ImageView
             android:id="@+id/image2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/NoteTheme"
             android:src="@drawable/black_note" />
 
         <ImageView
             android:id="@+id/image3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/NoteTheme"
             android:src="@drawable/red_note" />
+
+        <ImageView
+            android:id="@+id/image4"
+            style="@style/NoteTheme"
+            android:src="@drawable/red_note" />
+
+        <ImageView
+            android:id="@+id/image5"
+            style="@style/NoteTheme"
+            android:src="@drawable/red_note" />
+
+        <ImageView
+            android:id="@+id/image6"
+            style="@style/NoteTheme"
+            android:src="@drawable/red_note"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/image7"
+            style="@style/NoteTheme"
+            android:src="@drawable/red_note"
+            android:visibility="gone"/>
 
     </LinearLayout>
 

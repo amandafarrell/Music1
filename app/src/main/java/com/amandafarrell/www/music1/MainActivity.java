@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
     private ImageView mImageView1;
     private ImageView mImageView2;
     private ImageView mImageView3;
+    private ImageView mImageView4;
+    private ImageView mImageView5;
+    private ImageView mImageView6;
+    private ImageView mImageView7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,25 +35,37 @@ public class MainActivity extends AppCompatActivity {
         mImageView1 = findViewById(R.id.image1);
         mImageView2 = findViewById(R.id.image2);
         mImageView3 = findViewById(R.id.image3);
+        mImageView4 = findViewById(R.id.image4);
+        mImageView5 = findViewById(R.id.image5);
+        mImageView6 = findViewById(R.id.image6);
+        mImageView7 = findViewById(R.id.image7);
 
-        //ArrayList of ImageViews
-        mImageViews = new ArrayList<>();
-        mImageViews.add(mImageView1);
-        mImageViews.add(mImageView2);
-        mImageViews.add(mImageView3);
+
+//        //ArrayList of ImageViews
+//        mImageViews = new ArrayList<>();
+//        mImageViews.add(mImageView1);
+//        mImageViews.add(mImageView2);
+//        mImageViews.add(mImageView3);
 
         //ArrayList of image ids
         mNotes = new ArrayList<>();
-        mNotes.add(R.drawable.black_note);
-        mNotes.add(R.drawable.red_note);
-        mNotes.add(R.drawable.green_note);
-        mNotes.add(R.drawable.yellow_note);
+        mNotes.add(R.drawable.im0);
+        mNotes.add(R.drawable.im1);
+        mNotes.add(R.drawable.im2);
+        mNotes.add(R.drawable.im3);
+        mNotes.add(R.drawable.im4);
+        mNotes.add(R.drawable.im5);
+        mNotes.add(R.drawable.im6);
 
         //Store ImageView and note pairs in a map
         mImageViewImagePairs = new HashMap<>();
         mImageViewImagePairs.put(mImageView1, 0);
         mImageViewImagePairs.put(mImageView2, 1);
         mImageViewImagePairs.put(mImageView3, 2);
+        mImageViewImagePairs.put(mImageView4, 3);
+        mImageViewImagePairs.put(mImageView5, 4);
+        mImageViewImagePairs.put(mImageView6, 5);
+        mImageViewImagePairs.put(mImageView7, 6);
 
         displayNotes();
 
